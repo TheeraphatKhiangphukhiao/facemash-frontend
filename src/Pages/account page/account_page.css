@@ -1,0 +1,103 @@
+.account_page_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.account_page_body_avatar {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+/* ขยาย และ หมุน */
+.account_page_body_avatar_btn_edit , .account_page_body_card_btn_edit_icon , .account_page_body_card_btn_edit_icon_gotophotos{
+    transition: 1s ease;
+    color: black;
+ }    
+.account_page_body_avatar_btn_edit:hover , .account_page_body_card_btn_edit_icon:hover , .account_page_body_card_btn_edit_icon_gotophotos:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: 1s ease;
+}
+
+
+.account_page_body_cards {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.account_page_body_card {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+
+.account_page_body_card_name {
+    margin-left: 5%;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Kanit;
+}
+
+
+.account_page_body_card_btn_edit {
+    margin-right: 5%;
+}
+.account_page_body_card_btn_edit_icon_gotophotos{
+    color: black;
+    transform: rotate(180deg);
+}
+
+
+
+/* เงื่อนไขสำหรับขนาดหน้าจอที่มีความกว้างไม่เกิน 600px */
+@media (max-width: 1200px) {
+    .account_page_body_card_name {
+        font-size: 16px;
+    }
+    .account_page_body_cards {
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 750px) {
+    .account_page_body_card_name {
+        font-size: 13px;
+    }
+    .account_page_body_cards {
+        margin-bottom: 15%;
+    }
+}
+
+@media (max-width: 600px) {
+    .account_page_body_card_name {
+        font-size: 10px;
+    }
+    .account_page_body_cards {
+        margin-bottom: 25%;
+    }
+}
+.account_page_head_btnback {
+    background-color: rgb(97, 82, 192, 1);
+    color: aliceblue;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: Kanit;
+}

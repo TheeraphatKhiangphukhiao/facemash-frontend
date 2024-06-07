@@ -1,0 +1,112 @@
+.ranking_page_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.ranking_page_photos_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5%;
+    margin-bottom: -3%;
+}
+
+
+.ranking_page_photos_top_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.ranking_page_photo_top_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ranking_page_photo_top_3_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.ranking_page_photos_top_7 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.ranking_page_photo_top_7 {
+    margin-top: 15px;
+}
+.photo_rank {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+.photo_name_score {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ranking_page_photo_top_7_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ranking_page_card_media_grow_img, .ranking_page_photo_top_7{
+    transition: 1s ease;
+ }    
+.ranking_page_card_media_grow_img:hover, .ranking_page_photo_top_7:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 1s ease;
+}
+
+
+.ranking_page_body_loading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+
+
+
+/* เงื่อนไขสำหรับขนาดหน้าจอที่มีความกว้างไม่เกิน 600px */
+@media (max-width: 750px) {
+    .ranking_page_photos_top_3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .ranking_page_photo_top_3 {
+        margin-top: 20px;
+    }
+    .ranking_page_h1 {
+        font-size: 18px;
+    }
+    .ranking_page_photos_header {
+        padding-top: 15%;
+        margin-bottom: -15%;
+        font-size: 18px;
+    }
+    /* .ranking_page_photo_top_7_content {
+        flex-direction: column;
+        height: max-content;
+        background-color: aqua;
+    } */
+}

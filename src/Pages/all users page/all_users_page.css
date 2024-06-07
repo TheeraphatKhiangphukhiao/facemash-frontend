@@ -1,0 +1,254 @@
+.alluserspage_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.alluserspage_body_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.alluserspage_body_head_title {
+    margin-left: 5%;
+    font-size: 50px;
+}
+.alluserspage_body_head_textField_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5%;
+    justify-content: end;
+}
+
+
+.alluserspage_body_head_textField {
+    width: 65px;
+    background-color: aliceblue;
+}
+.alluserspage_body_head_textField input { /* กำหนดสีข้อความที่อยู่ใน TextField */
+    color: rgb(129, 31, 214);
+}
+
+
+.alluserspage_body_head_button {
+    background-color: rgba(97, 82, 192, 1);
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 12px;
+    border-color: rgba(97, 82, 192, 1);
+}
+
+
+
+
+.alluserspage_body_cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 100%;
+}
+
+
+.alluserspage_body_card {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.alluserspage_body_card_contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alluserspage_body_card_contents_imageAndName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 77%;
+    margin-left: 3%;
+}
+.alluserspage_body_card_contents_image {
+    margin-right: 5%;
+}
+
+.alluserspage_body_card_contents_button_div {
+    margin-right: 3%;
+    width: 17%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.alluserspage_body_card_contents_button_view {
+    font-size: 25px;
+    background-color: rgba(97, 82, 192, 1);
+    color: aliceblue;
+    border-color: rgba(97, 82, 192, 1);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+
+.alluserspage_body_card_contents_button_view {
+    transition: 1s ease;
+}
+.alluserspage_body_card_contents_button_view:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+
+.alluserspage_body_cards_loading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50%;
+}
+
+
+
+
+/* เมื่อความกว้างของหน้าจอ web ไม่เกิน 1200px*/
+@media (max-Width: 1200px) {
+    .alluserspage_body_head {
+        flex-direction: column;
+    }
+    .alluserspage_body_head_title {
+        margin-left: 0%;
+        font-size: 45px;
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_head_textField_button {
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_card {
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_card_contents {
+        flex-direction: column;
+    }
+    .alluserspage_body_card_contents_imageAndName {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .alluserspage_body_card_contents_image {
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_card_contents_Name {
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_card_contents_button_div {
+        margin-right: 0%;
+        width: 100%;
+        justify-content: center;
+    }
+    .alluserspage_body_card_contents_button_view {
+        font-size: 20px;
+    }
+    .alluserspage_body_cards_loading {
+        margin-bottom: 100%;
+    }
+}
+
+/* เมื่อความกว้างของหน้าจอ web ไม่เกิน 750px*/
+@media (max-Width: 750px) {
+    .alluserspage_body_head {
+        flex-direction: column;
+    }
+    .alluserspage_body_head_title {
+        margin-left: 0%;
+        font-size: 35px;
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_head_textField_button {
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_card {
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_card_contents {
+        flex-direction: column;
+    }
+    .alluserspage_body_card_contents_imageAndName {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .alluserspage_body_card_contents_image {
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_card_contents_Name {
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_card_contents_button_div {
+        margin-right: 0%;
+        width: 100%;
+        justify-content: center;
+    }
+    .alluserspage_body_card_contents_button_view {
+        font-size: 20px;
+    }
+    .alluserspage_body_cards_loading {
+        margin-bottom: 150%;
+    }
+}
+
+/* เมื่อความกว้างของหน้าจอ web ไม่เกิน 600px*/
+@media (max-Width: 600px) {
+    .alluserspage_body_head {
+        flex-direction: column;
+    }
+    .alluserspage_body_head_title {
+        margin-left: 0%;
+        font-size: 40px;
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_head_textField_button {
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_card {
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_card_contents {
+        flex-direction: column;
+    }
+    .alluserspage_body_card_contents_imageAndName {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .alluserspage_body_card_contents_image {
+        margin-right: 0%;
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_card_contents_Name {
+        margin-bottom: 5%;
+    }
+    .alluserspage_body_card_contents_button_div {
+        margin-right: 0%;
+        width: 100%;
+        justify-content: center;
+    }
+    .alluserspage_body_card_contents_button_view {
+        font-size: 15px;
+    }
+    .alluserspage_body_cards_loading {
+        margin-bottom: 190%;
+    }
+
+}

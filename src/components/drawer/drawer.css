@@ -1,0 +1,67 @@
+.main_body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: linear-gradient(to right, rgb(211, 204, 238), rgba(171, 155, 242));
+}
+
+
+.drawer_left_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    background-color: rgba(97, 82, 192, 1);
+    border-top-right-radius: 50px;
+    border-end-end-radius: 50px;
+}
+
+.drawer_left_button {
+    background-color: rgb(97, 82, 192, 1);
+    color: aliceblue;
+    width: 60%;
+    margin-top: 30px;
+    border-color: aliceblue;
+    border-radius: 20px;
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.main_body_content {
+    width: 85%;
+    padding: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+/* เงื่อนไขสำหรับขนาดหน้าจอที่มีความกว้างไม่เกิน 600px */
+@media (max-width: 1200px) {
+    .drawer_left_buttons {
+        width: 20%;
+    }
+}
+
+@media (max-width: 750px) {
+    .drawer_left_buttons {
+        width: 30%;
+    }
+    .drawer_left_button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .drawer_left_button {
+        font-size: 10px;
+    }
+}

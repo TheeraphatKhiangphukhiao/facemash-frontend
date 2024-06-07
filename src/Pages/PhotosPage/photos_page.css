@@ -1,0 +1,278 @@
+/* .photos_page_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+
+.photos_page_heard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.photos_page_heard_avatar_name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.photos_page_heard_name {
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+
+.photos_page_heard_btn_add {
+    color: aliceblue;
+}
+
+
+.photos_page_photos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+
+
+.photos_page_photo {
+    margin-right: 3%;
+    margin-bottom: 3%;
+    max-width: 300px;
+    border: 5px ridge rgb(97, 82, 192, 1);
+}
+
+
+.photos_page_photo_cardmedia_grow, .photos_page_photo{
+    transition: 1s ease;
+    border-radius: 40px;
+ }    
+.photos_page_photo_cardmedia_grow:hover, .photos_page_photo:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+
+.photos_page_photo_CardContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+
+
+
+ เงื่อนไขสำหรับขนาดหน้าจอที่มีความกว้างไม่เกิน 600px 
+@media (max-width: 1200px) {
+    .photos_page_heard_name {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .photos_page_heard {
+        flex-direction: column;
+    }
+    .photos_page_heard_avatar_name {
+        flex-direction: column;
+    }
+    .photos_page_heard_name {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 20px;
+        margin-left: 0px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .photos_page_heard {
+        flex-direction: column;
+    }
+    .photos_page_heard_avatar_name {
+        flex-direction: column;
+    }
+    .photos_page_heard_name {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 15px;
+        margin-left: 0px;
+    }
+} */
+
+
+
+
+
+
+
+
+.photos_page_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+
+.photos_page_heard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.photos_page_heard_avatar_name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.photos_page_heard_name {
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+
+.photos_page_heard_btn_add {
+    color: aliceblue;
+}
+
+
+.photos_page_photos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+
+
+.photos_page_photo {
+    margin-right: 3%;
+    margin-bottom: 3%;
+    max-width: 300px;
+    border: 5px ridge rgb(97, 82, 192, 1);
+}
+
+
+.photos_page_photo{
+    transition: 1s ease;
+    border-radius: 40px;
+ }    
+.photos_page_photo:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+
+.photos_page_photo_CardContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.photos_page_photos_is_null {
+    margin-bottom: 50%;
+}
+
+.photos_page_body_endsclipt {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 15%;
+}
+
+
+
+
+/* เงื่อนไขสำหรับขนาดหน้าจอที่มีความกว้างไม่เกิน 600px */
+@media (max-width: 1200px) {
+    .photos_page_heard_name {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .photos_page_photos_is_null {
+        margin-bottom: 120%;
+        font-size: 30px;
+    }
+    .photos_page_body_endsclipt {
+        margin-top: 50%;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .photos_page_heard {
+        flex-direction: column;
+    }
+    .photos_page_heard_avatar_name {
+        flex-direction: column;
+    }
+    .photos_page_heard_name {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 20px;
+        margin-left: 0px;
+    }
+    .photos_page_photos_is_null {
+        margin-bottom: 150%;
+        font-size: 20px;
+    }
+    .photos_page_body_endsclipt {
+        margin-top: 50%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .photos_page_heard {
+        flex-direction: column;
+    }
+    .photos_page_heard_avatar_name {
+        flex-direction: column;
+    }
+    .photos_page_heard_name {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 15px;
+        margin-left: 0px;
+    }
+    .photos_page_photos_is_null {
+        margin-bottom: 150%;
+        font-size: 15px;
+    }
+    .photos_page_body_endsclipt {
+        margin-top: 50%;
+    }
+}
+h1 {
+    font-family: Kanit;
+}
+p {
+    font-family: Kanit;
+}
